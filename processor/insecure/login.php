@@ -1,6 +1,6 @@
 <?php
 session_start();
-    
+
 require('../../configurations/database.php');
 
 include '../../models/User.php';
@@ -32,7 +32,7 @@ if (
         $_SESSION['email']     = $theUser->getEmailAddress();
         $_SESSION['password'] = $theUser->getPassword();
         $_SESSION['user_id']  = $theUser->getUserID();
-        
+
         setcookie('user_id',    $_SESSION['user_id'], (3600 + HOUR));
         setcookie('email',    $_SESSION['email'], (3600 + HOUR));
         setcookie('name',     $_SESSION['name'], (3600 + HOUR));
@@ -40,7 +40,7 @@ if (
 
         header("Location: ../../account/dashboard.php");
     } else {
-        $_SESSION['error'] = 'Your password didn\'t match the one we have';
+        $_SESSION['error'] = 'Sorry ' . $email . ' your password didn\'t match the one we have';
         header('Location: ../../login.php');
         exit();
     }

@@ -20,7 +20,6 @@ class CV
         $bvn = $this->getBVN();
         $dob = $this->getDOB();
 
-
         $query = "INSERT INTO cv ( name, hcert, cvFile, dob, bvn )
         VALUES ('$name', '$hcert', '$cvFile', '$dob', '$bvn' );";
         # Use PDO instead of mysqli - optional
