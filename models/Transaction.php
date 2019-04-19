@@ -22,15 +22,23 @@ class Transaction
         $bank_name = $this->getBankName();
         $amount = $this->getAmount();
         $name = $this->getDepositorName();
-        $description = addslashes($this->getDescription());
+        $description = $this->getDescription();
+
+        $account_name = addslashes($account_name);
+        $account_number = addslashes($account_number);
+        $bank_name = addslashes($bank_name);
+        $amount = addslashes($amount);
+        $description = addslashes($description);
 
 
         # Do not store the user's password plainly
         $query = "INSERT INTO transaction ( amount, acct_name, acct_num, bank_name, transfdescription, name )
         VALUES ('$amount', '$account_name', '$account_number', '$bank_name', '$description', '$name');";
 
+
         # Use PDO instead of mysqli - optional
         $inserted = mysqli_query(get_connection(), $query);
+
 
         if ($inserted) {
             $_SERVER['error'] = '';

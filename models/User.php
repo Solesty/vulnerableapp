@@ -24,6 +24,9 @@ class User
         $email_address  = $this->getEmailAddress();
         $password       = $this->getPassword();
 
+        $name = htmlentities($name);
+        $email_address = htmlentities($email_address);
+        $password = htmlentities($password);
 
         if (!$this->doesAccountExist($email_address)) {
 
@@ -51,19 +54,14 @@ class User
 
     public function doesAccountExist($email)
     {
-        $query = "SELECT id FROM users WHERE users.email = '$email'";
-        $result = get_connection()->query($query);
-
+        // $email =    htmlentities($email);
 
         $query = "SELECT * FROM users WHERE users.email = '$email'";
+
         $result = get_connection()->query($query);
-        $user = $result->fetch_object();
 
-        if ($user) {
-            $this->setEmailAddress($user->email);
-            $this->setName($user->name);
-            $this->setPassword($user->password);
-
+        if ($result) {
+            $user = $result->fetch_object();
             return $result->num_rows;
         } else {
             return 0;
@@ -75,6 +73,9 @@ class User
         if (!empty($this->getEmailAddress())) {
             $user = $this->getUSer();
             if ($user) {
+                $this->setEmailAddress($user->email);
+                $this->setName($user->name);
+                $this->setPassword($user->password);
                 # This is a vulneaibility, use the password hashing instead
                 # And compare the hashes together
                 if ($user->password == $this->getPassword()) {

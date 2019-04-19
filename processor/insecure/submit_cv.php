@@ -15,6 +15,12 @@ $bvn            = $_POST['bvn'];
 $hcert          = $_POST['hcert'];
 $file           = $_FILES['file'];
 
+# Mitigation against XSS and Injection
+$name = addslashes(($name));
+$dob = addslashes(($dob));
+$bvn = addslashes(($bvn));
+$hcert = addslashes(($hcert));
+
 
 if (
     empty($name) || empty($dob) || empty($hcert) || empty($bvn)
@@ -66,6 +72,7 @@ function uploadFile()
 
     $fileExtension = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
+    # MITIGATION against File inclusion
     //check if the file is a correct file and not script file
     // $allowedfileExtensions = array('jpg', 'gif', 'png', 'doc', 'docx', 'pdf');
     // if (!in_array($fileExtension, $allowedfileExtensions)) {

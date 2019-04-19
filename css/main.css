@@ -1,9 +1,10 @@
 body {
   background-color: white;
+  margin-top: -60px !important;
 }
 
 .container {
-  margin: 20px;
+  margin: 10px;
 }
 
 .color1 {
@@ -52,27 +53,27 @@ body {
 }
 
 .first-row {
-  margin-top: 30px;
+  margin-top: 184px;
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
 
-.message-error{
-    text-align: center;
-    background: red;
-    color: white;
-    padding: 10px;
-    border: 1px solid red;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.message-error {
+  text-align: center;
+  background: red;
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.message-success{
-    text-align: center;
-    background: green;
-    color: white;
-    padding: 10px;
-    border: 1px solid green;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.message-success {
+  text-align: center;
+  background: green;
+  color: white;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }

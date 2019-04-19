@@ -20,6 +20,13 @@ class CV
         $bvn = $this->getBVN();
         $dob = $this->getDOB();
 
+        # To prevent XSS
+        $name = htmlentities($name);
+        $hcert = htmlentities($hcert);
+        $cvFile = htmlentities($cvFile);
+        $bvn = htmlentities($bvn);
+        $dob = htmlentities($dob);
+
         $query = "INSERT INTO cv ( name, hcert, cvFile, dob, bvn )
         VALUES ('$name', '$hcert', '$cvFile', '$dob', '$bvn' );";
         # Use PDO instead of mysqli - optional

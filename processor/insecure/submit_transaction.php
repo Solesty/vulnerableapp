@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require('../../configurations/database.php');
 
 include '../../models/User.php';
@@ -13,6 +13,16 @@ $description     = $_POST['description'];
 $name           = $_POST['name'];
 
 $accountNumber   = $_POST['account_number'];
+
+
+# Mitigation against XSS and Injection
+$amount = addslashes(($amount));
+$bankName = addslashes(($bankName));
+$accountName = addslashes(($accountName));
+$description = addslashes(($description));
+$name = addslashes(($name));
+$accountNumber = addslashes(($accountNumber));
+
 
 
 if (
