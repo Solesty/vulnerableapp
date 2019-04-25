@@ -49,30 +49,37 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="submitcv.php">Submit CV</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="new_transaction.php">Request Cash</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Career
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="submitcv.php">Submit CV</a>
+            </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="new_transaction.php">Request Cash</a>
+            <a class="nav-link" href="#">About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Services</a>
+            <a class="nav-link active" href="contact.php">Contact</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="login.php">Admin Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
 
         </ul>
@@ -118,7 +125,7 @@
           <div class="contact-map box">
             <div id="map" class="contact-map">
 
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13813.74628640396!2d3.320228169874324!3d6.460279396760687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8967fc96870d%3A0xccb47f4389700baa!2sAlaba%2C+Lagos!5e1!3m2!1sen!2sng!4v1556176231490!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13813.74628640396!2d3.320228169874324!3d6.460279396760687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8967fc96870d%3A0xccb47f4389700baa!2sAlaba%2C+Lagos!5e1!3m2!1sen!2sng!4v1556176231490!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
@@ -191,8 +198,8 @@
                   </div>
                   <div class="icon-box-content">
                     <p class="mb-1">Alaba
-                        Ajeromi-Ifelodun, Lagos
-                      <br> 
+                      Ajeromi-Ifelodun, Lagos
+                      <br>
                     </p>
                   </div>
                 </div>
@@ -334,7 +341,7 @@
       </div>
     </div>
   </section> -->
-<!--   
+  <!--   
   <footer>
     <div class="container">
       <div class="row">
@@ -400,11 +407,11 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
             -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  </div>
+  </div>
+  </div>
+  </div>
   </footer> -->
   <!--/ Footer End /-->
 

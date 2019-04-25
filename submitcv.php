@@ -60,49 +60,59 @@ if (isset($_SESSION['success'])) {
 
     <div class="click-closed"></div>
 
-    <!--/ Nav Star /-->
-    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-        <div class="container">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a class="navbar-brand text-brand" href="">Sure<span class="color-b">Bank MF</span></a>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="">Sure<span class="color-b">Bank MF</span></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
 
-            <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active " href="submitcv.php">Submit CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="new_transaction.php">Request Cash</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Admin Login</a>
-                    </li>
-
-                </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="new_transaction.php">Request Cash</a>
             </div>
-        </div>
-    </nav>
-    <!--/ Nav End /-->
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Career
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="submitcv.php">Submit CV</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
 
 
     <div class="container">

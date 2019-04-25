@@ -49,30 +49,37 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="">Home</a>
+            <a class="nav-link active" href="index.php">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="submitcv.php">Submit CV</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="new_transaction.php">Request Cash</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Career
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="submitcv.php">Submit CV</a>
+            </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="new_transaction.php">Request Cash</a>
+            <a class="nav-link" href="#">About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Services</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="login.php">Admin Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
 
         </ul>
@@ -117,10 +124,10 @@
                     <p class="intro-title-top">
                       <br> </p>
                     <h1 class="intro-title mb-4">
-                      <span class="color-b"> </span> We are hiring
-                      <br> Submit your CV</h1>
+                      <span class="color-b"> </span> Get a loan in
+                      <br> 24 hours</h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="submitcv.php"><span class="price-a">submit cv </span></a>
+                      <a href="new_transaction.php"><span class="price-a">get loan </span></a>
                     </p>
                   </div>
                 </div>
