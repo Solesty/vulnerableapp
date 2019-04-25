@@ -1,4 +1,3 @@
-
 <!-- END PAGE CONTAINER-->
 </div>
 
@@ -8,6 +7,8 @@
 
 <!-- JavaScript ../libraries -->
 
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/jquery/jquery-migrate.min.js"></script>
 <!-- Jquery JS-->
 <script src="../vendor/jquery-3.2.1.min.js"></script>
 <!-- Bootstrap JS-->
@@ -33,8 +34,6 @@
 <script src="../js/main.js"></script>
 
 
-<script src="../lib/jquery/jquery.min.js"></script>
-<script src="../lib/jquery/jquery-migrate.min.js"></script>
 <script src="../lib/popper/popper.min.js"></script>
 <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="../lib/easing/easing.min.js"></script>

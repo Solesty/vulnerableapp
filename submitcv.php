@@ -91,7 +91,7 @@ if (isset($_SESSION['success'])) {
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact Us</a>
                     </li>
 
                     <li class="nav-item">

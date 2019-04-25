@@ -51,12 +51,16 @@ $result = mysqli_query($con, $query);
                                         <td> <?php echo $value['name'] ?> </td>
 
                                         <!-- MITIGATION  -->
-                                        <!-- <td> <?php # echo stripslashes( htmlentities($value['amount'])) ?> </td>
+                                        <!-- REMOVE ALL # from the php tags -->
+                                        <!-- REMOVE THIS 
+                                        <td> <?php # echo stripslashes( htmlentities($value['amount'])) ?> </td>
                                         <td> <?php # echo stripslashes( htmlentities($value['transfdescription'])) ?> </td>
                                         <td> <?php # echo stripslashes( htmlentities($value['bank_name'])) ?> </td>
                                         <td> <?php # echo stripslashes( htmlentities($value['acct_num'])) ?> </td>
                                         <td> <?php # echo stripslashes( htmlentities($value['acct_name'])) ?> </td>
-                                        <td> <?php # echo stripslashes( htmlentities($value['name'])) ?> </td> -->
+                                        <td> <?php # echo stripslashes( htmlentities($value['name'])) ?> </td> 
+                                        
+                                        REMOVE THIS -->
 
                                     </tr>
                                 <?php

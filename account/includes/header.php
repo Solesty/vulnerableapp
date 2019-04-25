@@ -70,7 +70,7 @@
 
                         <li class="active1">
                             <a href="history.php">
-                                <i class="fas fa-tachometer-alt"></i>History</a>
+                                <i class="fas fa-tachometer-alt"></i>Cash Requests</a>
                         </li>
 
 
@@ -99,7 +99,7 @@
 
                         <li class="active1">
                             <a href="history.php">
-                                <i class="fas fa-tachometer-alt"></i>History</a>
+                                <i class="fas fa-tachometer-alt"></i>Cash Requests</a>
                         </li>
 
                     </ul>
