@@ -76,10 +76,21 @@ if (isset($_SESSION['success'])) {
                     <li class="nav-item">
                         <a class="nav-link " href="submitcv.php">Submit CV</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="new_transaction.php">Request Cash</a>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="new_transaction.php">Request Cash</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="n#">Contact</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Admin Login</a>

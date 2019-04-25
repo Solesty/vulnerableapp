@@ -56,7 +56,19 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="new_transaction.php">Request Transaction</a>
+            <a class="nav-link" href="new_transaction.php">Request Cash</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="n#">Contact Us</a>
           </li>
 
           <li class="nav-item">
